@@ -1,0 +1,538 @@
+<div class="sun">
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+</div>
+<aside></aside>
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+
+
+
+<style>
+
+html,body {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 min-height: 100vh;
+	 background-color: #f3eeea;
+}
+ .sun {
+	 position: relative;
+	 width: 50vmin;
+	 height: 50vmin;
+	 border-radius: 100%;
+	 background-color: #ebf259;
+	 box-shadow: inset #f3eeea 0 0 0 7.1428571429vmin;
+	 animation: shimmer 6s ease alternate infinite;
+}
+ .ray {
+	 position: absolute;
+	 top: 0;
+	 left: 25vmin;
+	 width: 1.25vmin;
+	 height: 6.25vmin;
+	 transform-origin: 0 25vmin;
+	 transform: translateY(25vmin);
+}
+ .ray:before, .ray:after {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 background-color: #e36700;
+}
+ .ray:before {
+	 height: 20%;
+	 border-radius: 100%;
+	 transform-origin: 50% 0;
+	 animation: flare 1.6s linear infinite;
+}
+ .ray:after {
+	 height: 100%;
+	 transform-origin: 50% 100%;
+	 animation: wave 0.8s linear alternate infinite;
+}
+ .ray:nth-child(even):before, .ray:nth-child(even):after {
+	 background-color: #e59a27;
+}
+ .ray:nth-child(3n + 1):before, .ray:nth-child(3n + 1):after {
+	 background-color: #f2c559;
+}
+ .ray:nth-child(1) {
+	 transform: rotate(6deg);
+}
+ .ray:nth-child(1):before, .ray:nth-child(1):after {
+	 animation-delay: -0.33s;
+}
+ .ray:nth-child(2) {
+	 transform: rotate(12deg);
+}
+ .ray:nth-child(2):before, .ray:nth-child(2):after {
+	 animation-delay: -0.66s;
+}
+ .ray:nth-child(3) {
+	 transform: rotate(18deg);
+}
+ .ray:nth-child(3):before, .ray:nth-child(3):after {
+	 animation-delay: -0.99s;
+}
+ .ray:nth-child(4) {
+	 transform: rotate(24deg);
+}
+ .ray:nth-child(4):before, .ray:nth-child(4):after {
+	 animation-delay: -1.32s;
+}
+ .ray:nth-child(5) {
+	 transform: rotate(30deg);
+}
+ .ray:nth-child(5):before, .ray:nth-child(5):after {
+	 animation-delay: -1.65s;
+}
+ .ray:nth-child(6) {
+	 transform: rotate(36deg);
+}
+ .ray:nth-child(6):before, .ray:nth-child(6):after {
+	 animation-delay: -1.98s;
+}
+ .ray:nth-child(7) {
+	 transform: rotate(42deg);
+}
+ .ray:nth-child(7):before, .ray:nth-child(7):after {
+	 animation-delay: -2.31s;
+}
+ .ray:nth-child(8) {
+	 transform: rotate(48deg);
+}
+ .ray:nth-child(8):before, .ray:nth-child(8):after {
+	 animation-delay: -2.64s;
+}
+ .ray:nth-child(9) {
+	 transform: rotate(54deg);
+}
+ .ray:nth-child(9):before, .ray:nth-child(9):after {
+	 animation-delay: -2.97s;
+}
+ .ray:nth-child(10) {
+	 transform: rotate(60deg);
+}
+ .ray:nth-child(10):before, .ray:nth-child(10):after {
+	 animation-delay: -3.3s;
+}
+ .ray:nth-child(11) {
+	 transform: rotate(66deg);
+}
+ .ray:nth-child(11):before, .ray:nth-child(11):after {
+	 animation-delay: -3.63s;
+}
+ .ray:nth-child(12) {
+	 transform: rotate(72deg);
+}
+ .ray:nth-child(12):before, .ray:nth-child(12):after {
+	 animation-delay: -3.96s;
+}
+ .ray:nth-child(13) {
+	 transform: rotate(78deg);
+}
+ .ray:nth-child(13):before, .ray:nth-child(13):after {
+	 animation-delay: -4.29s;
+}
+ .ray:nth-child(14) {
+	 transform: rotate(84deg);
+}
+ .ray:nth-child(14):before, .ray:nth-child(14):after {
+	 animation-delay: -4.62s;
+}
+ .ray:nth-child(15) {
+	 transform: rotate(90deg);
+}
+ .ray:nth-child(15):before, .ray:nth-child(15):after {
+	 animation-delay: -4.95s;
+}
+ .ray:nth-child(16) {
+	 transform: rotate(96deg);
+}
+ .ray:nth-child(16):before, .ray:nth-child(16):after {
+	 animation-delay: -5.28s;
+}
+ .ray:nth-child(17) {
+	 transform: rotate(102deg);
+}
+ .ray:nth-child(17):before, .ray:nth-child(17):after {
+	 animation-delay: -5.61s;
+}
+ .ray:nth-child(18) {
+	 transform: rotate(108deg);
+}
+ .ray:nth-child(18):before, .ray:nth-child(18):after {
+	 animation-delay: -5.94s;
+}
+ .ray:nth-child(19) {
+	 transform: rotate(114deg);
+}
+ .ray:nth-child(19):before, .ray:nth-child(19):after {
+	 animation-delay: -6.27s;
+}
+ .ray:nth-child(20) {
+	 transform: rotate(120deg);
+}
+ .ray:nth-child(20):before, .ray:nth-child(20):after {
+	 animation-delay: -6.6s;
+}
+ .ray:nth-child(21) {
+	 transform: rotate(126deg);
+}
+ .ray:nth-child(21):before, .ray:nth-child(21):after {
+	 animation-delay: -6.93s;
+}
+ .ray:nth-child(22) {
+	 transform: rotate(132deg);
+}
+ .ray:nth-child(22):before, .ray:nth-child(22):after {
+	 animation-delay: -7.26s;
+}
+ .ray:nth-child(23) {
+	 transform: rotate(138deg);
+}
+ .ray:nth-child(23):before, .ray:nth-child(23):after {
+	 animation-delay: -7.59s;
+}
+ .ray:nth-child(24) {
+	 transform: rotate(144deg);
+}
+ .ray:nth-child(24):before, .ray:nth-child(24):after {
+	 animation-delay: -7.92s;
+}
+ .ray:nth-child(25) {
+	 transform: rotate(150deg);
+}
+ .ray:nth-child(25):before, .ray:nth-child(25):after {
+	 animation-delay: -8.25s;
+}
+ .ray:nth-child(26) {
+	 transform: rotate(156deg);
+}
+ .ray:nth-child(26):before, .ray:nth-child(26):after {
+	 animation-delay: -8.58s;
+}
+ .ray:nth-child(27) {
+	 transform: rotate(162deg);
+}
+ .ray:nth-child(27):before, .ray:nth-child(27):after {
+	 animation-delay: -8.91s;
+}
+ .ray:nth-child(28) {
+	 transform: rotate(168deg);
+}
+ .ray:nth-child(28):before, .ray:nth-child(28):after {
+	 animation-delay: -9.24s;
+}
+ .ray:nth-child(29) {
+	 transform: rotate(174deg);
+}
+ .ray:nth-child(29):before, .ray:nth-child(29):after {
+	 animation-delay: -9.57s;
+}
+ .ray:nth-child(30) {
+	 transform: rotate(180deg);
+}
+ .ray:nth-child(30):before, .ray:nth-child(30):after {
+	 animation-delay: -9.9s;
+}
+ .ray:nth-child(31) {
+	 transform: rotate(186deg);
+}
+ .ray:nth-child(31):before, .ray:nth-child(31):after {
+	 animation-delay: -10.23s;
+}
+ .ray:nth-child(32) {
+	 transform: rotate(192deg);
+}
+ .ray:nth-child(32):before, .ray:nth-child(32):after {
+	 animation-delay: -10.56s;
+}
+ .ray:nth-child(33) {
+	 transform: rotate(198deg);
+}
+ .ray:nth-child(33):before, .ray:nth-child(33):after {
+	 animation-delay: -10.89s;
+}
+ .ray:nth-child(34) {
+	 transform: rotate(204deg);
+}
+ .ray:nth-child(34):before, .ray:nth-child(34):after {
+	 animation-delay: -11.22s;
+}
+ .ray:nth-child(35) {
+	 transform: rotate(210deg);
+}
+ .ray:nth-child(35):before, .ray:nth-child(35):after {
+	 animation-delay: -11.55s;
+}
+ .ray:nth-child(36) {
+	 transform: rotate(216deg);
+}
+ .ray:nth-child(36):before, .ray:nth-child(36):after {
+	 animation-delay: -11.88s;
+}
+ .ray:nth-child(37) {
+	 transform: rotate(222deg);
+}
+ .ray:nth-child(37):before, .ray:nth-child(37):after {
+	 animation-delay: -12.21s;
+}
+ .ray:nth-child(38) {
+	 transform: rotate(228deg);
+}
+ .ray:nth-child(38):before, .ray:nth-child(38):after {
+	 animation-delay: -12.54s;
+}
+ .ray:nth-child(39) {
+	 transform: rotate(234deg);
+}
+ .ray:nth-child(39):before, .ray:nth-child(39):after {
+	 animation-delay: -12.87s;
+}
+ .ray:nth-child(40) {
+	 transform: rotate(240deg);
+}
+ .ray:nth-child(40):before, .ray:nth-child(40):after {
+	 animation-delay: -13.2s;
+}
+
+
+
+ .ray:nth-child(41) {
+	 transform: rotate(246deg);
+}
+ .ray:nth-child(41):before, .ray:nth-child(41):after {
+	 animation-delay: -13.53s;
+}
+ .ray:nth-child(42) {
+	 transform: rotate(252deg);
+}
+ .ray:nth-child(42):before, .ray:nth-child(42):after {
+	 animation-delay: -13.86s;
+}
+ .ray:nth-child(43) {
+	 transform: rotate(258deg);
+}
+ .ray:nth-child(43):before, .ray:nth-child(43):after {
+	 animation-delay: -14.19s;
+}
+ .ray:nth-child(44) {
+	 transform: rotate(264deg);
+}
+ .ray:nth-child(44):before, .ray:nth-child(44):after {
+	 animation-delay: -14.52s;
+}
+ .ray:nth-child(45) {
+	 transform: rotate(270deg);
+}
+ .ray:nth-child(45):before, .ray:nth-child(45):after {
+	 animation-delay: -14.85s;
+}
+ .ray:nth-child(46) {
+	 transform: rotate(276deg);
+}
+ .ray:nth-child(46):before, .ray:nth-child(46):after {
+	 animation-delay: -15.18s;
+}
+ .ray:nth-child(47) {
+	 transform: rotate(282deg);
+}
+ .ray:nth-child(47):before, .ray:nth-child(47):after {
+	 animation-delay: -15.51s;
+}
+ .ray:nth-child(48) {
+	 transform: rotate(288deg);
+}
+ .ray:nth-child(48):before, .ray:nth-child(48):after {
+	 animation-delay: -15.84s;
+}
+ .ray:nth-child(49) {
+	 transform: rotate(294deg);
+}
+ .ray:nth-child(49):before, .ray:nth-child(49):after {
+	 animation-delay: -16.17s;
+}
+ .ray:nth-child(50) {
+	 transform: rotate(300deg);
+}
+ .ray:nth-child(50):before, .ray:nth-child(50):after {
+	 animation-delay: -16.5s;
+}
+ .ray:nth-child(51) {
+	 transform: rotate(306deg);
+}
+ .ray:nth-child(51):before, .ray:nth-child(51):after {
+	 animation-delay: -16.83s;
+}
+ .ray:nth-child(52) {
+	 transform: rotate(312deg);
+}
+ .ray:nth-child(52):before, .ray:nth-child(52):after {
+	 animation-delay: -17.16s;
+}
+ .ray:nth-child(53) {
+	 transform: rotate(318deg);
+}
+ .ray:nth-child(53):before, .ray:nth-child(53):after {
+	 animation-delay: -17.49s;
+}
+ .ray:nth-child(54) {
+	 transform: rotate(324deg);
+}
+ .ray:nth-child(54):before, .ray:nth-child(54):after {
+	 animation-delay: -17.82s;
+}
+ .ray:nth-child(55) {
+	 transform: rotate(330deg);
+}
+ .ray:nth-child(55):before, .ray:nth-child(55):after {
+	 animation-delay: -18.15s;
+}
+ .ray:nth-child(56) {
+	 transform: rotate(336deg);
+}
+ .ray:nth-child(56):before, .ray:nth-child(56):after {
+	 animation-delay: -18.48s;
+}
+ .ray:nth-child(57) {
+	 transform: rotate(342deg);
+}
+ .ray:nth-child(57):before, .ray:nth-child(57):after {
+	 animation-delay: -18.81s;
+}
+ .ray:nth-child(58) {
+	 transform: rotate(348deg);
+}
+ .ray:nth-child(58):before, .ray:nth-child(58):after {
+	 animation-delay: -19.14s;
+}
+ .ray:nth-child(59) {
+	 transform: rotate(354deg);
+}
+ .ray:nth-child(59):before, .ray:nth-child(59):after {
+	 animation-delay: -19.47s;
+}
+ .ray:nth-child(60) {
+	 transform: rotate(360deg);
+}
+ .ray:nth-child(60):before, .ray:nth-child(60):after {
+	 animation-delay: -19.8s;
+}
+ @keyframes wave {
+	 0% {
+		 transform: scale(1, 0.5);
+	}
+	 50% {
+		 transform: scale(1.2, 1.5) translateY(5%);
+	}
+	 100% {
+		 transform: scale(0.8, 2);
+	}
+}
+ @keyframes flare {
+	 0% {
+		 opacity: 0;
+		 transform: scale(0.2) translateY(-4.1666666667vmin);
+	}
+	 100% {
+		 opacity: 1;
+		 transform: scale(0.8) translateY(-8.3333333333vmin);
+	}
+}
+ @keyframes shimmer {
+	 to {
+		 transform: rotate(5deg) scale(0.96);
+	} 
+}
+ 
+
+
+  </style>
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
+<!-- Coded By Siddhant Khare -->
